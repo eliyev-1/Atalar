@@ -1,0 +1,266 @@
+
+/* Navbar Toggle *//* Navbar Toggle *//* Navbar Toggle *//* Navbar Toggle *//* Navbar Toggle *//* Navbar Toggle *//* Navbar Toggle */
+
+.nav__openmenu,.nav__openmenu__content{
+flex-direction: column;
+margin-top: 2rem;
+}
+.nav__openmenu__content{
+    
+    padding-top:9rem;
+    position: relative;
+    height: 100vh;
+}
+.nav__openmenu__menuList ul{
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 2rem;
+    
+}
+.nav__openmenu__menuList{
+    order: 1;
+}
+.nav__openmenu__logo{
+    display: none;
+}
+.nav__openmenu__languageButtons{
+    gap: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    
+    height: 4rem;
+}
+.nav__openmenu__languageButtons button{
+    width: 8.4rem;
+}
+.nav__openmenu__menuicon{
+    
+    display: none;
+}
+.nav__openmenu__exiicon{
+    display: block;
+    position: absolute;
+    top: 3.6rem;
+    right: 4rem;
+    font-size: 4rem;
+}
+
+/* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar */
+
+nav{
+display: flex;
+justify-content: center;
+}
+.nav__content{
+margin-top: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+row-gap: 2rem;
+
+
+}
+.nav__content__logo{
+width: 10.1rem;
+}
+.nav__content__right__meuList ul{
+display: flex;
+align-items: center;
+gap: 3rem;
+
+}
+.nav__content__right{
+    
+display: flex;
+align-items: center;
+gap: 4rem;
+}
+.nav__content__right__menuIcon{
+    cursor: pointer;
+display: none;
+font-size: 4rem;
+}
+.nav__content__right__exitIcon{
+    cursor: pointer;
+    display: none;
+}
+.nav__content__right__languageButtons{
+width: 11.3rem;
+height: 2.6rem;
+display: flex;
+justify-content: center;
+border: 0.1rem solid var(--color-primary);
+border-radius: 3rem;
+}
+.nav__content__right__languageButtons button{
+width: 4.3rem;
+border: none;
+
+border-radius: 3rem;
+color: var(--color-primary);
+}
+.nav__content__right__languageButtons button:nth-child(1){
+background-color: var(--color-primary);
+color: var(--color-white);
+
+}
+/* Responsive (max-width:800px) *//* Responsive (max-width:800px) *//* Responsive (max-width:800px) *//* Responsive (max-width:800px) *//* Responsive (max-width:800px) *//* Responsive (max-width:800px) */
+@media (max-width:800px){
+
+    /* Responsive (max-width:800px) Navbar */    /* Responsive (max-width:800px) Navbar */    /* Responsive (max-width:800px) Navbar */    /* Responsive (max-width:800px) Navbar */
+
+.nav__content__right__meuList,.nav__content__right__languageButtons{
+    display: none;
+}
+.nav__content__right__menuIcon{
+    display: block;
+    
+}
+
+}
+
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+
+footer{
+    margin-top: 7.9rem;
+    margin-bottom: 4.3rem;
+    display: flex;
+    justify-content: center;
+}
+.footer__left p{
+    margin-top: 1.1rem;
+    font-size: 1.4rem;
+}
+footer .container,.footer__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__right{
+    gap: 7.7rem;
+}
+.footer__logo{
+    width: 10.1rem;
+}
+.footer__socialIcons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__socialIcons a{
+    color: var(--color-primary);
+    font-size: 2.4rem;
+}
+
+@media (max-width:1000px){
+
+    footer .container{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:700px){
+    .footer__right{
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+.registrationPopup{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: rgba(0, 0, 0, 0.3);;
+    height: 100%;
+    width: 100%;
+}
+.registrationPopup__inputsBackground{
+    width: 45%;
+    height: auto;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+   
+}
+.registrationPopup__inputs{
+    display: flex;
+    justify-content: center;
+
+    width: 90%;
+    flex-direction: column;
+    
+}
+.registrationPopup__exitButton{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+.registrationPopup__exitButton i{
+    cursor: pointer;
+}
+.registrationPopup__inputs form h1{
+    font-family: var(--main-font1);
+}
+.registrationPopup__inputs form label:nth-child(1){
+    margin-bottom: 3rem;
+    
+}
+.registrationPopup__inputs form{
+  
+    width: 90%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+gap: 1.5rem;
+}
+.registrationPopup__inputs input{
+width: 100%;
+
+padding-left: 3rem;
+border: 0.1rem solid var(--color-black-light);
+border-radius: 2.5rem;
+}
+
+.numbers {
+
+position: relative;
+    
+}
+
+.numbers  #operatorCode{
+    position: absolute;
+    width: 15rem;
+    right:0;
+    top: 0;
+    
+    
+}
+.registrationPopup__inputs input, .registrationPopup__inputs button{
+height: 5rem;
+}
+.registrationPopup__inputs form button{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.registrationPopup__inputs form button:hover{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+@media(max-width:850px){
+    .registrationPopup__inputsBackground{
+        width: 90%; 
+}
+
+.registrationPopup__inputs form{
+width: 100%;
+}
+}
